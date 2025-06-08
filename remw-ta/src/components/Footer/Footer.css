@@ -1,0 +1,135 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 91%;
+    background-color: var(--color-teal-800);
+    color: var(--color-white);
+    padding: 1rem;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+
+
+
+.footer-content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+    .footer {
+        width: 100%;
+    }
+
+
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .footer-details {
+        flex-direction: row;
+        margin-bottom: 0;
+        column-gap: 1rem;
+        width: auto;
+    }
+}
+
+.footer-details>span {
+    margin-bottom: 0.25rem;
+}
+
+@media (min-width: 640px) {
+    .footer-details>span {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+}
+
+
+.footer-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-price {
+    color: var(--color-teal-200);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.footer-hire-period {
+    color: var(--color-teal-300);
+    font-size: 0.875rem;
+}
+
+.footer-buttons {
+    display: flex;
+    column-gap: 0.75rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .footer-buttons {
+        width: auto;
+    }
+}
+
+.footer-button {
+    flex: 1;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-gray-600);
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    font-weight: 600;
+    transition: background-color 200ms ease-in-out;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-button:hover {
+    background-color: var(--color-gray-700);
+}
+
+.footer-button-continue {
+    background-color: var(--color-blue-600);
+}
+
+.footer-button-continue:hover {
+    background-color: var(--color-blue-700);
+}
+
+.footer-button-arrow {
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
